@@ -1,6 +1,6 @@
 # vue.js tab component
 
-## dr-tab
+## comnponent name : dr-tab
 
 ## Project setup
 ```
