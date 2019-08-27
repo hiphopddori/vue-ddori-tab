@@ -40,9 +40,6 @@ export default {
     },
     mounted() {
         
-    },
-    comments:{
-        DrTab
     }
     ,methods: {
         onClickTab(selectedTab){
