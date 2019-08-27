@@ -1,8 +1,8 @@
 # vue.js tab component
 
-## comnponent name : dr-tab
+## dr-tab
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
