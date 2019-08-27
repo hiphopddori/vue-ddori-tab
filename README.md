@@ -1,4 +1,6 @@
-# dr-tab
+### vue tab component
+
+## dr-tab
 
 ## Project setup
 ```
@@ -10,4 +12,4 @@ npm install
 npm run serve
 ```
 
-### vue tab component
+
