@@ -1,4 +1,4 @@
-### vue tab component
+# vue.js tab component
 
 ## dr-tab
 
