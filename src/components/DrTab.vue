@@ -13,6 +13,9 @@ export default {
         },
         selected:{
             default:false
+        },
+        hidden:{
+            default:false
         }
     },
     data(){
