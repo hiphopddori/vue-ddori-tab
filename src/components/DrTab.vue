@@ -31,6 +31,11 @@ export default {
             return '#' + this.name.toLowerCase().replace(/ /g,'-');
         }
     },
+    watch:{
+        selected(value) {            
+            this.isActive = value;
+        },
+    }
 }
 </script>
 
