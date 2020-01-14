@@ -24,7 +24,11 @@ import DrTab from "./DrTab.vue";
 
 export default {
     
-    props:{       
+    props:{
+        hiddenTabs:{
+            type:Array,
+            default:null
+        },
     },
     data(){
         return{
@@ -49,7 +53,31 @@ export default {
 
             this.$emit("onChange",selInfo);
         },
-    }    
+    },watch:{
+        hiddenTabs:{            
+            handler(value){                                                
+                if (value != null){ 
+                    let hidden = [];
+                    this.tabs.forEach((tab,index )=> {                                           
+                        hidden[index]=false;                        
+                        value.forEach(hiddenName =>{                                               
+                            if (hiddenName == tab.name){
+                                hidden[index]=true;
+                            }                   
+                        });                            
+                    });
+                    this.tabs.forEach((tab,index )=> {    
+                        tab.hidden = hidden[index];
+                    });        
+                }else{
+                    this.tabs.forEach(tab =>{                   
+                        tab.hidden = false;
+                    });                
+                }           
+            }            
+        }
+    }
+
 }
 </script>
 
