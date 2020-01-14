@@ -1,6 +1,6 @@
 <template>
     <dr-tabs>
-        <dr-tab name="Tab'" selected="true">
+        <dr-tab name="Tab" selected="true">
             TAB1
         </dr-tab>
         <dr-tab name="Tab2">
