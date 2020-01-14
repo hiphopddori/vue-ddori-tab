@@ -13,14 +13,12 @@ export default {
         },
         selected:{
             default:false
-        },
-        hidden:{
-            default:false
         }
     },
     data(){
         return{
-            isActive:false,            
+            isActive:false,
+            hidden:false
         }
     }    
     ,mounted() {
@@ -31,11 +29,6 @@ export default {
             return '#' + this.name.toLowerCase().replace(/ /g,'-');
         }
     },
-    watch:{
-        selected(value) {            
-            this.isActive = value;
-        },
-    }
 }
 </script>
 
